@@ -13,5 +13,8 @@ https://lucssvittor.github.io/Calculator/
 
 <br>
 
+<h1> Para Melhor Visualização </h1>
 No mobile, em seu navegador aperte nos 3 pontos no canto superior direito e coloque o modo para computador
+
+![Print](/print)
 </div>
