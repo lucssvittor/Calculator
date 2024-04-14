@@ -6,4 +6,9 @@ Este é um projeto de uma calculadora simples desenvolvida em HTML, CSS e JavaSc
 
 ![Calculadora](/Img/calculadora.png)
 
+<br>
+
+Confira
+https://lucssvittor.github.io/Calculator/
+
 </div>
