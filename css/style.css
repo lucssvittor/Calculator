@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100vh; /* Altura da tela inteira */
+  width: 100vw; /* Largura da tela inteira */
+  background: url(https://wallpapers-hub.art/wallpaper-images/552334.jpg) no-repeat center center fixed; /* Imagem de fundo */
+  background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.calbody {
+  background-color: #02090e;
+  padding: 1vw;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.display {
+  height: 8vw;
+  width: 20vw;
+  color: #d7e6fd;
+  padding: 2vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: xx-large;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #02090e;
+  border-radius: 5px;
+}
+
+.nome {
+  color: #d7e6fd;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttondiv {
+  display: flex;
+  cursor: pointer;
+}
+
+.buttonbox {
+  height: 5vw;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d7e6fd;
+}
+
+.orangebutton {
+  color: #7890fb;
+}
+
+.equalbutton {
+  background-color: #7890fb;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 430px) {
+  .calbody {
+    padding: 5vw;
+    font-size: 14px;
+  }
+
+  .display {
+    height: 20vw;
+    width: 90vw;
+    font-size: 4vw;
+  }
+
+  .buttondiv {
+    flex-wrap: wrap;
+    gap: 1vw;
+  }
+
+  .buttonbox {
+    height: 10vw;
+    width: 10vw;
+    font-size: 3vw;
+  }
+}
