@@ -10,5 +10,5 @@ Este é um projeto de uma calculadora simples desenvolvida em HTML, CSS e JavaSc
 
 Confira
 https://lucssvittor.github.io/Calculator/
-
+No mobile, em seu navegador aperte nos 3 pontos no canto superior direito e coloque o modo para computador
 </div>
