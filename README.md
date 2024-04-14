@@ -16,5 +16,5 @@ https://lucssvittor.github.io/Calculator/
 <h1> Para Melhor Visualização </h1>
 No mobile, em seu navegador aperte nos 3 pontos no canto superior direito e coloque o modo para computador
 
-![Print](/print)
+![Calculadora](/Img/Screenshot_2024-04-14-11-52-58-457_com.android.chrome.jpg)
 </div>
