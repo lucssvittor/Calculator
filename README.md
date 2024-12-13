@@ -8,9 +8,4 @@ Este é um projeto de uma calculadora simples desenvolvida em HTML, CSS e JavaSc
 
 <br>
 
-Confira
-https://lucssvittor.github.io/Calculator/
-
-<br>
-
 </div>
