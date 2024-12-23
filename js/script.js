@@ -6,8 +6,8 @@ let operator = "";
 let previousInput = "";
 let resultDisplayed = false;
 
-buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
+buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
         let buttonText = button.innerText;
 
         if (buttonText == "C") {
@@ -17,21 +17,22 @@ buttons.forEach(function(button) {
             display.innerText = "";
         } else if (buttonText == "DEL") {
             currentInput = currentInput.slice(0, -1);
-            display.innerText = currentInput;
+            display.innerText = formatNumber(currentInput);
         } else if (buttonText == "+" || buttonText == "-" || buttonText == "*" || buttonText == "/") {
             if (currentInput !== "") {
                 operator = buttonText;
                 previousInput = currentInput;
                 currentInput = "";
+                display.innerText = formatNumber(previousInput) + " " + operator;
             }
         } else if (buttonText == "%") {
             let percent = parseFloat(currentInput) / 100;
             currentInput = (parseFloat(previousInput) * percent).toString();
-            display.innerText = currentInput;
+            display.innerText = formatNumber(currentInput);
         } else if (buttonText == "=") {
             if (currentInput !== "" && previousInput !== "") {
                 let result = calculate(parseFloat(previousInput), parseFloat(currentInput), operator);
-                display.innerText = result;
+                display.innerText = formatNumber(result);
                 currentInput = result.toString();
                 previousInput = "";
                 resultDisplayed = true;
@@ -42,7 +43,7 @@ buttons.forEach(function(button) {
                 resultDisplayed = false;
             }
             currentInput += buttonText;
-            display.innerText = currentInput;
+            display.innerText = formatNumber(currentInput);
         }
     });
 });
@@ -64,4 +65,10 @@ function calculate(num1, num2, operator) {
         default:
             return "Error";
     }
+}
+
+function formatNumber(value) {
+    if (!value) return "";
+    return parseFloat(value).toLocaleString("en-US").replace(",", ".");
+
 }
